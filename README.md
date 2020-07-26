@@ -3,6 +3,9 @@
 
 A smart robot which is built with UV-C lights to eradicate the corona virus laying around.
 
+![b1](https://img.shields.io/github/repo-size/PIYSocial-India/Coradicator?style=for-the-badge)  ![b1](https://img.shields.io/apm/l/vim-mode?style=for-the-badge) 
+![b3](https://img.shields.io/badge/Subscribe%20us%20on-YouTube-red?style=for-the-badge&logo=youtube)  ![b4](https://img.shields.io/twitter/follow/PIYSocial?color=blue&logo=Twitter&style=flat-square)
+
 ## Introduction
 Coradicator is a room disinfection device based in Ultraviolet-C radiation. It offers the capacity to be remotely programmed using an Android mobile device and it has an infrared detection security system that turns off the system when triggered.
 
