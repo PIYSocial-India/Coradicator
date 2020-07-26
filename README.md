@@ -99,3 +99,16 @@ Further, we are planning to make the bot completely autonomous using ROS.
 
 ## Conclusion
 An UV-C room disinfection device was made with similar functions to proprietary commercial systems. The presented model can be easily scaled up, modifying its structure (adding more UV-C lamps) and programming (editing the open source code of the Arduino board and/or of the Android application), achieving savings for more than 80% respect to the price of similar proprietary commercial equipment
+
+## Addition Resources:
+Full Video: [Click Here](https://www.youtube.com/watch?v=drwVUMTpzDM)
+Short Video: [Click Here](https://www.youtube.com/watch?v=2qDfOr7RtQY)
+Documentation: [Click Here](https://bit.ly/2P3bhiR)
+Presentation: [Click Here](https://bit.ly/303ivtP)
+
+----
+### Contributors:
+Saswat Samal | Sanket Sanjeeb Pattanaik | Saswat Mohanty
+------------ | ------------- | -------------
+Software | Hardware | Hardware
+[ Saswat's Website](http://saswatsamal.me/) | [Sanket's Github](https://github.com/Sanket-Pattanaik) |[Saswat's GitHub](https://github.com/Saswat7101)
