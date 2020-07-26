@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style.css">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Coradicator | Corona + Eradicate = Coradicator !</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="Coradicator" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Corona + Eradicate = Coradicator !" />
+<meta property="og:description" content="Corona + Eradicate = Coradicator !" />
+<link rel="canonical" href="https://piysocial-india.github.io/Coradicator/" />
+<meta property="og:url" content="https://piysocial-india.github.io/Coradicator/" />
+<meta property="og:site_name" content="Coradicator" />
+<script type="application/ld+json">
+{"@type":"WebSite","headline":"Coradicator","url":"https://piysocial-india.github.io/Coradicator/","description":"Corona + Eradicate = Coradicator !","name":"Coradicator","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Coradicator</h1>
+        <h2>Corona + Eradicate = Coradicator ! </h2>
+
+        <section id="downloads">
+            <a href="https://github.com/PIYSocial-India/Coradicator" class="btn"><span class="icon"></span>View on GitHub</a>
+            <a href="https://www.youtube.com/watch?v=drwVUMTpzDM"class="btn" ><span class="icon"></span>YouTube</a>
+        
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1 id="coradicator">Coradicator</h1>
+        
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/drwVUMTpzDM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+<p>A smart robot which is built with UV-C lights to eradicate the corona virus laying around.</p>
+
+<h2 id="introduction">Introduction</h2>
+<p>Coradicator is a room disinfection device based in Ultraviolet-C radiation. It offers the capacity to be remotely programmed using an Android mobile device and it has an infrared detection security system that turns off the system when triggered.</p>
+
+<p>The system here described is easily scalable to generate higher ultraviolet dosages adding more UV-C lamps. This device has a very high effectiveness to eliminate high bacterial inocula</p>
+
+<p>The sanitizing method employed by this device affects a very wide range of microorganisms and it has several advantages respect to chemical based-sanitizing methods</p>
+
+<p>This device represents a secure, fast and automatized equipment for room disinfecting. The device is configured in less than three minutes and it does not require continuous monitoring.</p>
+
+<h2 id="theory">Theory</h2>
+<p>Since the last years, mobiles systems based on UV-C radiation have been used for cleaning and disinfecting hospitals. The contribution of this equipment to the conditioning of hospital areas makes these systems useful for other kinds of spaces that require periodical disinfecting.</p>
+
+<p><code class="language-plaintext highlighter-rouge">UV-C radiation inactivates microorganisms causing DNA damage by producing cyclobutane pyrimidine dimers (CPDs), altering DNA structure, and thus interfering with DNA replication.</code></p>
+
+<p>According to the World Health Organization Global Solar UV Index, the UV region covers the wavelength range from 100 to 400 nm and is divided into three bands:</p>
+<ul>
+  <li>UV-A (315–400 nm)</li>
+  <li>UV-B (280–315 nm)</li>
+  <li>UV-C (100–280 nm)</li>
+</ul>
+
+<p>UV-C light, which is absorbed by the atmosphere, represents the most lethal wavelength for a wide spectrum of microorganisms. The maximum germicidal power of the ultraviolet radiation is at wavelengths near 260 nm and it drops dramatically below 230 or above 300 nm.</p>
+
+<h2 id="hardware-description">Hardware Description</h2>
+<ul>
+  <li>We have constructed a UV-C radiator device that includes a microcontroller board, an Arduino UNO board.</li>
+  <li>For controlling the robot and the UV lights we are using the Bluetooth module HC06.</li>
+  <li>For live camera feedback to the controller, we are using the ESP32 Camera Board to get the live video feedback so that we can control it outside the room.</li>
+  <li>In addition, the equipment can be operated from a wide range of Android mobile devices with suitable screens and processing capacity (tablet, cell phone, etc), taking advantage of the ubiquity of these devices, and lowering the cost of its construction.</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/PIYSocial-India/Coradicator/master/_img/6.png" width="600" /></p>
+
+<h2 id="build-of-the-uv-bot">Build of the UV-Bot</h2>
+<p>The construction of the device involved three stages:</p>
+<ul>
+  <li>Structural building</li>
+  <li>Electronic assembling</li>
+  <li>Programming of the microcontroller and the mobile application</li>
+</ul>
+
+<p>The scaffold structure was made by attaching to a central column four holders for UV-C germicide lamps, connected in parallel. The central column was placed on the bot which has four wheels for locomotion.</p>
+
+<p>The control unit is based on an Arduino UNO board; this gives the order to the switch to turn on the UV-C lamps using an electromechanical relay. An HCO6 Bluetooth module is used to communicate with the board using Bluetooth devices.</p>
+
+<p>Three LEDs were installed to indicate it functional estate:</p>
+<ul>
+  <li>Connected to the electric supply (green LED)</li>
+  <li>Bluetooth connection established (blue LED)</li>
+  <li>UV-C lamps activated (red LED)</li>
+</ul>
+
+<p>The red LED is combined with a passive buzzer to start a warning sequence just before the activation of the UV-C lamps. Because the UV-C radiation is harmful to humans, a PIR sensor was added as a security measure. In this way, the device is automatically turned off when a user is near.</p>
+
+<p>The ESP32 Camera is attached to the front part of the robot which will send the realtime live video to the controlling app so that the person who will be controlling the bot.</p>
+
+<p>Finally, a mobile application was developed to control the disinfecting unit. 
+This app was designed using the MIT app inventor 2 tool. 
+The interface of this application is used for connection to the device via Bluetooth, and for controlling the robot wirelessly.</p>
+
+<p><img src="https://raw.githubusercontent.com/PIYSocial-India/Coradicator/master/_img/2.png" width="600" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The Robot
+</code></pre></div></div>
+
+<h3 id="working">Working</h3>
+<p>The dosage values can be used to estimate the required exposure time according to the following simplified method:</p>
+
+<p>The UV-C dosage received by surface unit (D, expressed in J/cm2) at a given distance (r) from the sanitizer, depends on the power of the emitted UV-C light (P, equal to 48W for our device) according to this equation:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   D = (P.t) / (2π.L.r) 
+</code></pre></div></div>
+
+<p>Where L is the length of the UV-C lamps (89 cm) and t is the exposure time expressed in seconds.</p>
+
+<p>Based on this equation, the exposure time can be calculated as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   t = (2π.L.r.D) / P	
+</code></pre></div></div>
+
+<p>Using this method, a tool to estimate the minimum exposure time to reach the desired dosage for a certain distance from the device was developed and is available in the initial screen of the app controlling the device.</p>
+
+<p><strong>The Schematics for the UV Light</strong></p>
+
+<p><img src="https://raw.githubusercontent.com/PIYSocial-India/Coradicator/master/_img/circuit1.png" width="600" /></p>
+
+<p>Now coming to the driving part. 
+The driving is done though the mobile app through bluetooth. The realtime video helps the driver to control the bot from another room so that UV rays will not harm him.</p>
+
+<p>Further, we are planning to make the bot completely autonomous using ROS.</p>
+
+<p><strong>The Schematics of the Bluetooth Control</strong></p>
+
+<p><img src="https://raw.githubusercontent.com/PIYSocial-India/Coradicator/master/_img/bluetooth_circuit.PNG" width="600" /></p>
+
+<p><strong>The Controlling App</strong></p>
+
+<p><img src="https://raw.githubusercontent.com/PIYSocial-India/Coradicator/master/_img/3.png" width="600" /></p>
+
+<p><img src="https://raw.githubusercontent.com/PIYSocial-India/Coradicator/master/_img/4.png" width="600" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>An UV-C room disinfection device was made with similar functions to proprietary commercial systems. The presented model can be easily scaled up, modifying its structure (adding more UV-C lamps) and programming (editing the open source code of the Arduino board and/or of the Android application), achieving savings for more than 80% respect to the price of similar proprietary commercial equipment</p>
+
+<h2 id="addition-resources">Addition Resources:</h2>
+<p>Full Video: <a href="https://www.youtube.com/watch?v=drwVUMTpzDM">Click Here</a>
+Short Video: <a href="https://www.youtube.com/watch?v=2qDfOr7RtQY">Click Here</a>
+Documentation: <a href="https://bit.ly/2P3bhiR">Click Here</a>
+Presentation: <a href="https://bit.ly/303ivtP">Click Here</a></p>
+
+      </section>
+    </div>
+
+    
+  </body>
+</html>
